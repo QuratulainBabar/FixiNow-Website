@@ -24,8 +24,13 @@ const Home = () => {
             <li><a href="#about">About</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><button className="btn-login">Login</button></li>
-            <li><button className="btn-signup">Sign Up</button></li>
+            <li>
+              <Link to="/login" className="btn-login">Login</Link>
+            </li>
+            <li>
+              <Link to="/signup" className="btn-signup">Sign Up</Link>
+            </li>
+
           </ul>
         </nav>
       </header>
@@ -112,26 +117,30 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      
 
 
-<footer className="footer">
-  <div className="footer-links">
-    <Link to="/">Home <br /></Link>
-    <Link to="/login">Login <br /></Link>
-    <Link to="/signup">Signup <br /></Link>
-    <Link to="/services">Service Listing <br /></Link>
-    <Link to="/service-detail">Service Detail <br /></Link>
-    <Link to="/profile">Profile <br /></Link>
-    <Link to="/user-dashboard">User Dashboard <br /></Link>
-    <Link to="/provider-dashboard">Provider Dashboard <br /></Link>
-    <Link to="/booking">Booking <br /></Link>
-    <Link to="/review">Review <br /></Link>
-    <Link to="/admin">Admin Panel <br /></Link>
-  </div>
-  <p>© 2025 FixiNow. All rights reserved.</p>
-</footer>
 
+
+
+
+
+
+      <footer className="footer">
+        <div className="footer-links">
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/signup">Signup</Link>
+          <Link to="/services">Service Listing</Link>
+          <Link to="/profile">Profile</Link>
+          <Link to="/user-dashboard">User Dashboard</Link>
+          <Link to="/provider-dashboard">Provider Dashboard</Link>
+          <Link to="/booking">Booking</Link>
+          <Link to="/review">Review</Link>
+          <Link to="/admin">Admin Panel</Link>
+          <Link to="/support">Help & Support</Link>
+        </div>
+        <p>© 2025 FixiNow. All rights reserved.</p>
+      </footer>
 
 
     </div>

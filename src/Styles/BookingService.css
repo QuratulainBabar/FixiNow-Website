@@ -1,0 +1,147 @@
+/* Colors from your palette */
+:root {
+  --color-bg: #F2F2F2;
+  --color-bg-alt: #EAE4D5;
+  --color-border: #B6B09F;
+  --color-text: #000000;
+  --color-text-light: rgb(182, 176, 159);
+  --color-btn-bg: #B6B09F;
+  --color-btn-text: #000000;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: var(--color-bg-alt);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--color-border);
+  font-size: 28px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 15px;
+}
+
+.booking-form select {
+  width: 100%;
+  /* Fixed width for dropdown */
+  padding: 10px 12px;
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto 15px auto;
+  /* Centered with bottom margin */
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  /* Full width inputs and textarea */
+  padding: 10px 12px;
+  border: 1.5px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: var(--color-btn-bg);
+  background-color: #fff;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-border);
+  color: var(--color-bg-alt);
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 50px;
+  padding: 25px 20px;
+  background-color: var(--color-bg);
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--color-border);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: var(--color-btn-bg);
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .booking-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+  }
+
+  /* On small screens, make dropdown full width */
+  .booking-form select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
